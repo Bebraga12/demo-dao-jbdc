@@ -2,8 +2,8 @@ package app;
 
 import java.util.Date;
 
-import model.Department;
-import model.Seller;
+import model.entities.Department;
+import model.entities.Seller;
 
 public class Program {
     public static void main(String[] args) throws Exception {
