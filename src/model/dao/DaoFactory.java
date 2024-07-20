@@ -1,10 +1,11 @@
 package model.dao;
 
-import model.dao.impl.SellerDaoJDBC;
+import db.DB;
+import model.impl.SellerDaoJDBC;
 
 public class DaoFactory {
     
     public static SellerDao creatSellerDao(){
-        return new SellerDaoJDBC();
+        return new SellerDaoJDBC(DB.getConnection());
     }
 }
